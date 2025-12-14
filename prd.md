@@ -1,11 +1,3 @@
-This is a significant and excellent pivot. Moving to a **Static Site** architecture hosted on GitHub Pages dramatically simplifies your operations. You effectively have zero infrastructure costs, zero server maintenance, and instant deployment by just pushing code.
-
-Since JavaScript is now allowable and necessary for logic in a static environment, we will shift the "Brain" of the application from the server to the user's browser.
-
-Here is the revised PRD for the Static/GitHub Pages architecture.
-
----
-
 #PRD: "MathHub" & Game 01 "Memory" (Static Edition)| **Version** | 2.0 |
 | --- | --- |
 | **Status** | Draft |
@@ -37,8 +29,6 @@ Here is the revised PRD for the Static/GitHub Pages architecture.
         └── script.js     # Memory Game Logic
 
 ```
-
-
 
 ##3. The Framework (The "Hub")Because we don't have a server to inject headers, we will use a small JavaScript snippet to inject the global navigation into every page, or simply include it in the HTML templates.
 
