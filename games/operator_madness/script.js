@@ -110,7 +110,16 @@ function startGame() {
 
     // 3. Render UI
     renderOperands();
-    if(targetEl) targetEl.innerText = target;
+    var old = document.getElementById('target-goal');
+    if(old) { old.remove(); }
+    if(targetEl){
+      const chip = document.createElement('span');
+      chip.className = 'operand-chip';
+      chip.id = `target-goal`;
+      chip.innerText = target;
+      targetEl.appendChild(chip);
+      //targetEl.innerText = target;
+    }
     if(inputEl) inputEl.value = '';
     if(inputEl) inputEl.focus();
     hideFeedback();
