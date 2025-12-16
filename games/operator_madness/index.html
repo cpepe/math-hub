@@ -48,7 +48,7 @@
 
     <div id="start-card" class="card shadow-lg p-5 mb-4 text-center">
         <h2 class="text-primary">Welcome to Operator Madness!</h2>
-        <p class="lead">Click **New Game** to display the numbers and begin the challenge. You must use all four numbers exactly once.</p>
+        <p class="lead"> Add, subtract, multiply, or divide the four numbers to equal the goal. </p>
         <button onclick="startGame()" class="btn btn-success btn-lg mt-3">New Game</button>
     </div>
 
@@ -60,6 +60,7 @@
             <div id="operand-group" class="number-group mb-4">
                 </div>
 
+            <h3 class="text-muted mb-3">Goal</h3>
             <div id="target-container" class="d-inline-block p-3 rounded-3 target-number">
                 0
             </div>
@@ -70,7 +71,7 @@
 
             <div id="feedback-message" class="alert alert-danger d-none" role="alert"></div>
 
-            <input type="text" id="equation-input" class="form-control form-control-lg text-center mb-3" placeholder="e.g., 3 * (4 - 2) + 1" autocomplete="off">
+            <input type="text" id="equation-input" class="form-control form-control-lg text-center mb-3" placeholder="e.g. Goal=0; 3 * (4 - 2) + 1" autocomplete="off">
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <button onclick="submitEquation()" class="btn btn-success btn-lg px-4">Submit</button>

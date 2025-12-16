@@ -117,7 +117,7 @@ function startExposurePhase() {
     // Set timer to transition to input phase
     displayTimeout = setTimeout(() => {
         startInputPhase();
-    }, settings.displayTime * 1000);
+    }, settings.displayTime);
 }
 
 // --- Feature: Skip Display Time ---
